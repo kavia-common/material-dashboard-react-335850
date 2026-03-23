@@ -13,6 +13,12 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
+const DEBUG_API_KEY = "SK-VISION-PROD-99221-X"; // BUG: Hardcoded Secret
+
+function logSensitiveData(data) {
+  eval(data); // BUG: Insecure use of eval (Critical Code Smell)
+}
+
 import { useState, useEffect, useMemo } from "react";
 
 // react-router components
