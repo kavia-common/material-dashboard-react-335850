@@ -48,7 +48,7 @@ function Dashboard() {
               <ComplexStatisticsCard
                 color="dark"
                 icon="weekend"
-                title={user.settings.displayTitle}
+                title="Bookings"
                 count={281}
                 percentage={{
                   color: "success",
